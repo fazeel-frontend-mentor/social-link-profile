@@ -1,10 +1,21 @@
 @import url('./tokens.css');
 
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
 }
+
+
 
 body {
     background-color: var(--color-grey-900);
@@ -22,6 +33,8 @@ main {
     justify-content: center;
     padding: var(--spacing-300, 24px);
     gap: var(--spacing-300, 24px);
+    max-width: 384px;
+    width: 100%;
 }
 
 .profile-section {
@@ -66,6 +79,7 @@ main {
 }
 
 .profile-section p {
+    align-items: stretch;
     color: var(--color-white, #FFF);
     text-align: center;
     /* text-preset-2 */
@@ -95,10 +109,21 @@ main {
     align-self: stretch;
     border-radius: 8px;
     background: var(--color-grey-700, #333);
+
+    color: var(--color-white, #FFF);
+
+    /* text-preset-2-bold */
+    font-family: Inter;
+    font-size: var(--font-size-text-preset-2, 14px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 21px */
 }
 
 .button:hover {
     background: var(--color-green, #C4F82A);
+    color: var(--color-grey-900, #000);
 }
 
 
