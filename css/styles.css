@@ -23,6 +23,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    padding: var(--spacing-300, 24px);
 }
 
 main {
@@ -33,7 +34,7 @@ main {
     justify-content: center;
     padding: var(--spacing-300, 24px);
     gap: var(--spacing-300, 24px);
-
+    max-width: 384px;
     width: 100%;
 }
 
@@ -132,7 +133,6 @@ main {
     /* Tablet styles */
     main {
         padding: var(--spacing-500, 40px);
-        max-width: 384px;
     }
 }
 
@@ -140,6 +140,5 @@ main {
 
     main {
         padding: var(--spacing-500, 40px);
-        max-width: 384px;
     }
 }
