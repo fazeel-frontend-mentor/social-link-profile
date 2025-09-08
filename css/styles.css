@@ -87,6 +87,7 @@ main {
 
 .button {
     display: flex;
+    color: white;
     padding: var(--spacing-150, 12px);
     justify-content: center;
     align-items: center;
