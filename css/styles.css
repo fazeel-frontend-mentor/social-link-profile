@@ -1,0 +1,117 @@
+@import url('./tokens.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--color-grey-900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    background-color: var(--color-grey-800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-300, 24px);
+    gap: var(--spacing-300, 24px);
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-300, 24px);
+    color: white;
+}
+
+.profile-section img {
+    width: 88px;
+    height: 88px;
+    border-radius: 999px;
+}
+
+.profile-section h1 {
+    color: var(--color-white, #FFF);
+    text-align: center;
+
+    /* text-preset-1 */
+    font-family: Inter;
+    font-size: var(--font-size-text-preset-1, 24px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 36px */
+}
+
+.profile-section h2 {
+    color: var(--color-green, #C4F82A);
+    text-align: center;
+
+    /* text-preset-2-bold */
+    font-family: Inter;
+    font-size: var(--font-size-text-preset-2, 14px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 21px */
+}
+
+.profile-section p {
+    color: var(--color-white, #FFF);
+    text-align: center;
+    /* text-preset-2 */
+    font-family: Inter;
+    font-size: var(--font-size-text-preset-2, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.button-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-200, 16px);
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    padding: var(--spacing-150, 12px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-100, 8px);
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--color-grey-700, #333);
+}
+
+.button:hover {
+    background: var(--color-green, #C4F82A);
+}
+
+
+@media (min-width: 376px) and (max-width: 768px) {
+
+    /* Tablet styles */
+    main {
+        padding: var(--spacing-500, 40px);
+    }
+}
+
+@media (min-width: 769px) {
+
+    main {
+        padding: var(--spacing-500, 40px);
+    }
+}
